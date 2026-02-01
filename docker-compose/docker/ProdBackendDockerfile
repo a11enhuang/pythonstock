@@ -21,8 +21,6 @@ echo "deb http://mirrors.aliyun.com/debian-security/ bullseye-security main" >> 
 echo "deb-src http://mirrors.aliyun.com/debian-security/ bullseye-security main" >> /etc/apt/sources.list && \
 echo "deb http://mirrors.aliyun.com/debian/ bullseye-updates main non-free contrib" >> /etc/apt/sources.list && \
 echo "deb-src http://mirrors.aliyun.com/debian/ bullseye-updates main non-free contrib" >> /etc/apt/sources.list && \
-echo "deb http://mirrors.aliyun.com/debian/ bullseye-backports main non-free contrib" >> /etc/apt/sources.list && \
-echo "deb-src http://mirrors.aliyun.com/debian/ bullseye-backports main non-free contrib" >> /etc/apt/sources.list && \
 echo  "[global]\n\
 trusted-host=mirrors.aliyun.com\n\
 index-url=http://mirrors.aliyun.com/pypi/simple" > /etc/pip.conf && \
