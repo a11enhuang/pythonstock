@@ -49,7 +49,7 @@ RUN mkdir -p /etc/vim/ && \
 # 安装 nodejs 库
 # apt-get autoremove -y 删除没有用的依赖lib。减少镜像大小。1MB 也要节省。
 # apt-get --purge remove 软件包名称 , 删除已安装包（不保留配置文件)。
-RUN yum install -y git pkg-config net-tools procps gcc make python3-dev default-libmysqlclient-dev libxml2-dev cron  && \
+RUN apt-get update && apt-get install -y git pkg-config net-tools procps gcc make python3-dev default-libmysqlclient-dev libxml2-dev cron  && \
     pip3 install mysqlclient sqlalchemy && \
     pip3 install supervisor && \
     pip3 install numpy pandas  && \
